@@ -1,4 +1,4 @@
-import std/[threadpool, sequtils, sugar] #Precisamos da threadpool da função spawn
+import std/[threadpool, sequtils, sugar] 
 
 proc tarefaPesada(n: int): int {.thread.} = #"{.thread.} indica que a tarefaPesada é escrita para rodar em worker threads
   var acc = 0
